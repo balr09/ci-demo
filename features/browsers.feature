@@ -13,5 +13,4 @@ Given I navigate to page "https://www.capgemini.com"
  Examples:
    | busqueda  | nombre                    | 
    | seguridad | Comercial CIberseguridad  | 
-   | wiseqa    | trending                  | 
    
