@@ -40,12 +40,12 @@ public class AppSteps
 
 	@When("^I search for \"([^\"]*)\"$")
 	public void i_search_for(String searchString) throws Throwable {
-		By by = By.xpath("//*[@id=\"header\"]//div[contains(@class, 'sprite-search-icon')]");
+		By by = By.xpath("//header//a[contains(@href, 'search')]");
 		
 		WebElement sb = wait.until(ExpectedConditions.visibilityOfElementLocated(by));
 		sb.click();
 		
-		driver.findElement(By.id("q")).sendKeys(searchString+Keys.ENTER);
+		driver.findElement(By.id("query")).sendKeys(searchString+Keys.ENTER);
 	}
 
 	@Then("^I verify the presence of link with text \"([^\"]*)\"$")
