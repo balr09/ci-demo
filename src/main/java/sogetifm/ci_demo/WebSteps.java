@@ -21,12 +21,12 @@ import cucumber.api.java.en.When;
  * Hello world!
  *
  */
-public class AppSteps 
+public class WebSteps 
 {
 	private WebDriver driver;
 	private WebDriverWait wait;
 	
-	public AppSteps() {
+	public WebSteps() {
 		driver = new FirefoxDriver();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
