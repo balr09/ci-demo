@@ -1,7 +1,7 @@
 #Author: sogeti
 @TESTS
-Feature: Test beetroot on browsers.
- Esta feature realiza pruebas sobre navegadores.
+Feature: Test calculator on Android
+ Esta feature realiza pruebas sobre Android.
 
 @TestAndroidCalculator
 Scenario Outline: F001 - Busqueda google.
