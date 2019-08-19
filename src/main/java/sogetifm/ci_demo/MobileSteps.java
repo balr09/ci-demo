@@ -44,6 +44,7 @@ public class MobileSteps
 		
 		caps.setCapability("appPackage", "com.android.calculator2");
 		caps.setCapability("appActivity", ".Calculator");
+		caps.setCapability("uiautomator2ServerInstallTimeout", "120000");
 	}
 	
 	@Given("^I open Calculator app on Android$")
