@@ -29,7 +29,8 @@ import io.appium.java_client.android.AndroidDriver;
  */
 public class MobileSteps 
 {
-	private static String APPIUM_URL = "http://127.0.0.1:4723/wd/hub";
+	// private static String APPIUM_URL = "http://127.0.0.1:4723/wd/hub";
+	private static String APPIUM_URL = "https://appium.bitbar.com/wd/hub";
 	
 	private WebDriver driver;
 	private WebDriverWait wait;
@@ -46,13 +47,14 @@ public class MobileSteps
 		
 		caps.setCapability("appPackage", "com.android.calculator2");
 		caps.setCapability("appActivity", ".Calculator");
-		caps.setCapability("uiautomator2ServerInstallTimeout", "120000");
+		// caps.setCapability("uiautomator2ServerInstallTimeout", "120000");
 		
 		/******************************************************/
 		/** TESTDROID execution                               */
-		caps.setCapability("bitbar_apiKey", "vwSBA9Zdni5eHIGRf3yj7AGOFhlGUWLK");
-		caps.setCapability("bitbar_device", "");
-		caps.setCapability("bitbar_app", "");
+		// caps.setCapability("bitbar_apiKey", "vwSBA9Zdni5eHIGRf3yj7AGOFhlGUWLK");
+		// caps.setCapability("bitbar_findDevice", "true");
+		// caps.setCapability("bitbar_device", "LG Google Nexus 5 6.0.1");
+		// caps.setCapability("bitbar_app", "129219434");
 
 	}
 	
