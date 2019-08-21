@@ -38,6 +38,8 @@ public class MobileSteps
 	public MobileSteps() throws MalformedURLException {
 		caps = new DesiredCapabilities();
 		
+		/******************************************************/
+		/** local execution                                   */
 		// caps.setCapability("deviceName", "73d3be57");
 		caps.setCapability("deviceName", "emulator-5554");
 		caps.setCapability("platformName", "Android");
@@ -45,6 +47,13 @@ public class MobileSteps
 		caps.setCapability("appPackage", "com.android.calculator2");
 		caps.setCapability("appActivity", ".Calculator");
 		caps.setCapability("uiautomator2ServerInstallTimeout", "120000");
+		
+		/******************************************************/
+		/** TESTDROID execution                               */
+		caps.setCapability("bitbar_apiKey", "vwSBA9Zdni5eHIGRf3yj7AGOFhlGUWLK");
+		caps.setCapability("bitbar_device", "");
+		caps.setCapability("bitbar_app", "");
+
 	}
 	
 	@Given("^I open Calculator app on Android$")
