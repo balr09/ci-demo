@@ -27,14 +27,14 @@ public class WebSteps
 	private WebDriverWait wait;
 	
 	public WebSteps() {
-		driver = new FirefoxDriver();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		
-		wait = new WebDriverWait(driver, 20);
 	}
 	
 	@Given("^I navigate to page \"([^\"]*)\"$")
 	public void i_navigate_to_page(String url) throws Throwable {
+		driver = new FirefoxDriver();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		
+		wait = new WebDriverWait(driver, 20);
 	    driver.navigate().to(url);
 	}
 
