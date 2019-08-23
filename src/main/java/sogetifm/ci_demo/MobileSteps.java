@@ -82,7 +82,7 @@ public class MobileSteps
 		driver.findElement(By.id(sumid)).click();
 		driver.findElement(By.id(id2)).click();
 		
-		takeSnapshot("captura-suma.png");
+		// takeSnapshot("captura-suma.png");
 		driver.findElement(By.id(eqid)).click();
 	}
 
