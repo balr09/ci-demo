@@ -29,8 +29,8 @@ import io.appium.java_client.android.AndroidDriver;
  */
 public class MobileSteps 
 {
-	// private static String APPIUM_URL = "http://127.0.0.1:4723/wd/hub";
-	private static String APPIUM_URL = "https://appium.bitbar.com/wd/hub";
+	private static String APPIUM_URL = "http://127.0.0.1:4723/wd/hub";
+	// private static String APPIUM_URL = "https://appium.bitbar.com/wd/hub";
 	
 	private WebDriver driver;
 	private WebDriverWait wait;
