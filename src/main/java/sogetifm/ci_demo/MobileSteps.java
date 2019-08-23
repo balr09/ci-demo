@@ -44,6 +44,7 @@ public class MobileSteps
 		// caps.setCapability("deviceName", "73d3be57");
 		caps.setCapability("deviceName", "emulator-5554");
 		caps.setCapability("platformName", "Android");
+		caps.setCapability("platformVersion", "7.0");
 		
 		caps.setCapability("appPackage", "com.android.calculator2");
 		caps.setCapability("appActivity", ".Calculator");
