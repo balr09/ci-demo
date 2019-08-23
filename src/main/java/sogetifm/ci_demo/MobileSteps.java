@@ -21,6 +21,7 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.remote.MobileCapabilityType;
 
 
 /**
@@ -49,7 +50,9 @@ public class MobileSteps
 		caps.setCapability("appPackage", "com.android.calculator2");
 		caps.setCapability("appActivity", ".Calculator");
 		caps.setCapability("uiautomator2ServerInstallTimeout", "120000");
-		
+		caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
+		caps.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 12000);
+		 
 		/******************************************************/
 		/** TESTDROID execution                               */
 		// caps.setCapability("bitbar_apiKey", "vwSBA9Zdni5eHIGRf3yj7AGOFhlGUWLK");
