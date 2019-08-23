@@ -48,7 +48,7 @@ public class MobileSteps
 		
 		caps.setCapability("appPackage", "com.android.calculator2");
 		caps.setCapability("appActivity", ".Calculator");
-		// caps.setCapability("uiautomator2ServerInstallTimeout", "120000");
+		caps.setCapability("uiautomator2ServerInstallTimeout", "120000");
 		
 		/******************************************************/
 		/** TESTDROID execution                               */
