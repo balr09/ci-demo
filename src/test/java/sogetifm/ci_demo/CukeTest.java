@@ -17,7 +17,7 @@ import cucumber.api.junit.Cucumber;
 			},
 		monochrome = true,
 		features = "features",
-		tags = {"@TestAndroidCalculator"},
+		tags = {"@TESTS"},
 		glue = "sogetifm.ci_demo"
 )
 public class CukeTest {
