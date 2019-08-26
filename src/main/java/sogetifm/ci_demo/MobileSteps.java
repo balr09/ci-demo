@@ -92,7 +92,12 @@ public class MobileSteps
 	public void i_get_the_result(int expected) throws Throwable {
 	    String resultid = "com.android.calculator2:id/result";
 	    
-	    int result = Integer.parseInt(driver.findElement(By.id(resultid)).getText());
+	    int result;
+	    try {
+	    	result = Integer.parseInt(driver.findElement(By.id(resultid)).getText());
+	    } catch (NumberFormatException e) {
+	    	result = Integer.MIN_VALUE;
+	    }
 
 	    
 	    assertTrue(result == expected);
