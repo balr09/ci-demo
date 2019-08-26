@@ -84,6 +84,8 @@ public class MobileSteps
 		
 		// takeSnapshot("captura-suma.png");
 		driver.findElement(By.id(eqid)).click();
+		Thread.sleep(5000);
+		driver.findElement(By.id(eqid)).click();
 	}
 
 	@Then("^I get the result \"(\\d)\"$")
