@@ -8,10 +8,10 @@ Scenario Outline: F001 - Búsqueda en capgemini.com.
 Given I navigate to page "https://www.capgemini.com"
  When I search for "<busqueda>"
  Then I verify the presence of link with text "<nombre>"
-  And I close the navigator
+  And I close the browser
 	
  Examples:
    | busqueda  | nombre                    | 
-   | seguridad | Comercial CIberseguridad  | 
+   | seguridad | Analista Ciberseguridad   | 
    | scrum     | Scrum Master              | 
    

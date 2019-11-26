@@ -4,6 +4,7 @@ import static org.junit.Assert.assertNotNull;
 
 import java.util.concurrent.TimeUnit;
 
+import org.junit.AfterClass;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -56,10 +57,15 @@ public class WebSteps
 	    assertNotNull(link);
 	}
 
-	@Then("^I close the navigator$")
-	public void i_close_the_navigator() throws Throwable {
+	@Then("^I close the browser$")
+	public void i_close_the_browser() throws Throwable {
 		if (driver != null) {
 			driver.quit();
 		}
+	}
+	
+	@AfterClass
+	public void afterClass() throws Throwable {
+		i_close_the_browser();
 	}
 }
