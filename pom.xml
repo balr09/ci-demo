@@ -16,6 +16,7 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<selenium.browser>chrome</selenium.browser>
 		<selenium.server>localhost</selenium.server>
+		<maven.multiModuleProjectDirectory>.</maven.multiModuleProjectDirectory>                
 	</properties>
 	<build>
 
