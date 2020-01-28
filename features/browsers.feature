@@ -11,7 +11,7 @@ Given I navigate to page "https://www.capgemini.com"
   And I close the browser
 	
  Examples:
-   | busqueda  | nombre                    | 
-   | seguridad | Analista Ciberseguridad   | 
-   | scrum     | Scrum Master              | 
+   | busqueda  | nombre           | 
+   | seguridad | Security Manager | 
+   | scrum     | Scrum Master     | 
    
